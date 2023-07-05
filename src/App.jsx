@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Feed, Navbar } from "./components";
+import { Feed, Footer, Navbar } from "./components";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Feed />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
