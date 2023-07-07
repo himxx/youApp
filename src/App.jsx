@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Feed, Footer, Navbar } from "./components";
+import { ChannelDetail, Feed, Footer, Navbar } from "./components";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Feed />} />
+        <Route  path="/channel/:id" element={<ChannelDetail />} />
       </Routes>
       <Footer />
     </BrowserRouter>
