@@ -7,6 +7,9 @@ export { default as Videos } from "./Videos.jsx";
 export { default as VideoCard } from "./VideoCard.jsx";
 export { default as ChannelCard } from "./ChannelCard.jsx";
 export { default as ChannelDetail } from "./ChannelDetail.jsx";
+export { default as SearchFeed } from "./SearchFeed.jsx";
+
+
 
 
 
