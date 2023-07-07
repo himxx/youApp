@@ -14,6 +14,12 @@ const options = {
 };
 
 export const fetchFromApi = async (url) => {
-  const { data } = await axios.get(`${BASE_URL}/${url}`, options);
+  try {
+    const { data } = await axios.get(`${BASE_URL}/${url}`, options);
+    return data;
+
+  } catch (error) {
+    throw error;
+  }
   return data;
 };

@@ -67,3 +67,14 @@ body {
     @apply p-4 md:px-8;
   }
 }
+
+.react-player {
+  height: 55vh!important;
+  width: 100%!important;
+}
+
+@media(max-width:768px) {
+  .react-player {
+    height: 45vh!important;
+  }
+}

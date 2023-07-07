@@ -12,7 +12,7 @@ const ChannelCard = ({ channel, marginTop }) => {
           alt=""
         />
          <h2 className="  font-bold flex">
-          {channel?.snippet?.channelTitle|| demoChannelTitle} 
+          {channel?.snippet?.title|| demoChannelTitle} 
 
         </h2>
 
