@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { fetchFromApi } from "../utils/fetchFromApi";
 import ChannelCard from "./ChannelCard";
 import Videos from "./Videos";
+import Loader from "./Loader";
 
 const ChannelDetail = () => {
   const { id } = useParams();
@@ -16,6 +17,9 @@ const ChannelDetail = () => {
       (data) => setvideos(data?.items)
     );
   }, [id]);
+
+  if (!ChannelDetail?.snippet) return <Loader />;
+
   return (
     <div className="min-h-[95vh] justify-center ">
       <div className="bg-linear h-[200px] z-10"></div>

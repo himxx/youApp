@@ -4,10 +4,10 @@ import { fetchFromApi } from "../utils/fetchFromApi";
 import { useParams } from "react-router-dom";
 
 const SearchFeed = () => {
-  const [videos, setvideos] = useState([]);
+  const [videos, setVideos] = useState([]);
   const {searchTerm} = useParams();  
   useEffect(()=> {
-    fetchFromApi(`search?part=snippet&q=${searchTerm}`).then((data)=> (setvideos(data?.items)))
+    fetchFromApi(`search?part=snippet&q=${searchTerm}`).then((data)=> (setVideos(data?.items)))
   },[searchTerm])
  
 

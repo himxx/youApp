@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import VideoCard from "./VideoCard.jsx";
 import ChannelCard from "./ChannelCard.jsx";
+import Loader from "./Loader.jsx";
 
 const Videos = ({ videos }) => {
+  if(!videos?.length) return <Loader />;
+
   return (
     <div className="mt-2 flex flex-wrap gap-2 justify-center">
       {videos.map((item, index) => (
