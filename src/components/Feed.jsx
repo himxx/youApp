@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 import Videos from "./Videos";
-import { fetchFromApi } from "../utils/fetchFromApi";S
+import { fetchFromApi } from "../utils/fetchFromApi";
 
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState("New");
